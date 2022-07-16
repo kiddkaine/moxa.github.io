@@ -15,6 +15,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-weight: 400;
 }
 
 *,
@@ -74,6 +75,7 @@ body::-webkit-scrollbar-thumb {
 .block {
 	margin-top: 120px;
 }
+
 /* Шапка сайта */
 
 .header {
@@ -89,6 +91,7 @@ body::-webkit-scrollbar-thumb {
 	align-items: center;
 	gap: 13px;
 	font-size: 32px;
+	font-weight: 700;
 }
 
 .icon {
@@ -113,7 +116,6 @@ body::-webkit-scrollbar-thumb {
 .header__link {
 	text-decoration: none;
 	font-size: 16px;
-	font-weight: 400;
 	color: var(--text);
 }
 
@@ -121,7 +123,6 @@ body::-webkit-scrollbar-thumb {
 	color: var(--text);
 	text-decoration: none;
 	font-size: 16px;
-	font-weight: 400;
 	padding: 9px 26px;
 	border: 1px solid var(--text);
 	transition: .125s ease;
@@ -144,7 +145,6 @@ body::-webkit-scrollbar-thumb {
 .intro__title {
 	font-size: 56px;
 	text-transform: uppercase;
-	font-weight: 400;
 	margin: 0;
 }
 
@@ -159,7 +159,6 @@ body::-webkit-scrollbar-thumb {
 	padding: 0 16px;
 	list-style: url(../img/marker.png);
 	font-size: 23px;
-	font-weight: 400;
 }
 
 .intro__item:first-child {
@@ -175,7 +174,6 @@ body::-webkit-scrollbar-thumb {
 .intro__link {
 	padding: 13px 33px;
 	font-size: 16px;
-	font-weight: 400;
 }
 
 .intro__text {
@@ -221,7 +219,6 @@ body::-webkit-scrollbar-thumb {
 	list-style: none;
 	text-transform: uppercase;
 	font-size: 18px;
-	font-weight: 400;
 	display: flex;
 	gap: 25px;
 }
@@ -242,13 +239,11 @@ body::-webkit-scrollbar-thumb {
 
 .about__name {
 	font-size: 23px;
-	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .about__job {
 	font-size: 56px;
-	font-weight: 400;
 }
 
 .about__description {
@@ -260,12 +255,10 @@ body::-webkit-scrollbar-thumb {
 
 .about__title {
 	font-size: 31px;
-	font-weight: 400;
 }
 
 .about__text {
 	font-size: 18px;
-	font-weight: 400;
 }
 
 .about__data {
@@ -283,13 +276,11 @@ body::-webkit-scrollbar-thumb {
 .about__sup {
 	color: var(--anchor);
 	font-size: 12px;
-	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .about__sub {
 	font-size: 23px;
-	font-weight: 400;
 }
 
 /* Блок опыта работы */
@@ -319,10 +310,172 @@ body::-webkit-scrollbar-thumb {
 
 .experience__quantity {
 	font-size: 56px;
-	font-weight: 400;
 }
 
 .experience__description {
 	font-size: 16px;
-	font-weight: 400;
+}
+
+/* Определение стилей для общего заголовка блока */
+
+.block__icon,
+.block__title,
+.block__text {
+	text-align: center;
+}
+
+.block__icon {
+	font-size: 40px;
+	display: block;
+}
+
+.block__title {
+	font-size: 45px;
+	margin: 22px 0 18px 0;
+}
+
+.block__text {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+
+/* Блок с наградами */
+
+.awards__items {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.awards__item {
+	list-style: none;
+	border: 2px solid var(--text);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 35px;
+}
+
+.awards__content-one,
+.awards__content-two {
+	display: flex;
+	align-items: center;
+}
+
+.awards__content-one {
+	gap: 24px;
+}
+
+.awards__content-two {
+	gap: 16px;
+}
+
+.awards__number {
+	padding: 12.5px 20px;
+	background-color: var(--anchor);
+	color: var(--white);
+	font-size: 18px;
+}
+
+.top__row {
+	font-size: 23px;
+}
+
+.bottom__row {
+	font-size: 18px;
+}
+
+.awards__direction,
+.awards__date {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+/* Блок портфолио */
+
+.portfolio__items {
+	display: flex;
+	flex-direction: column;
+	gap: 95px;
+}
+
+.portfolio__item {
+	list-style: none;
+	display: flex;
+	gap: 45px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.portfilio__title {
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: var(--anchor);
+	color: var(--white);
+	display: inline;
+	padding: 5px 12px;
+}
+
+.portfolio__text {
+	font-size: 45px;
+	margin: 30px 0 50px 0;
+}
+
+.portfolio__link {
+	color: var(--text);
+	text-decoration: none;
+	font-size: 20px;
+	transition: .125s ease;
+}
+
+.portfolio__link:hover {
+	text-decoration: underline;
+}
+
+/* Блок услуги */
+
+.services__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: space-between;
+}
+
+.services__item {
+	list-style: none;
+	width: 500px;
+	border: 2px solid var(--text);
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.services__title {
+	font-size: 31px;
+}
+
+.services__text {
+	font-size: 18px;
+}
+
+/* Блок клиентов */
+
+.clients__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+	margin-top: 62px;
+}
+
+.clients__item {
+	list-style: none;
+	border: 2px solid var(--text);
+	width: 250px;
+	padding: 45px 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
