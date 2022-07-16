@@ -9,6 +9,7 @@
 	--text: #161513;
 	--anchor: #e94d35;
 	--white: #ffffff;
+	--pink: #e6e3de;
 }
 
 * {
@@ -103,20 +104,17 @@ body::-webkit-scrollbar-thumb {
 	gap: 32px;
 }
 
-.header__item {
+.header__link {
 	list-style: none;
 	padding: 5px 0;
 	transition: .125s ease;
-}
-
-.header__item:hover {
-	border-bottom: 1px solid var(--text);
-}
-
-.header__link {
 	text-decoration: none;
 	font-size: 16px;
 	color: var(--text);
+}
+
+.header__link:hover {
+	border-bottom: 1px solid var(--text);
 }
 
 .header__button {
@@ -478,4 +476,59 @@ body::-webkit-scrollbar-thumb {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+/* Блок со статьями */
+
+.articles {
+	margin-bottom: 136px;
+}
+
+.articles__box {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+}
+.articles__item {
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid var(--text);
+	align-items: center;
+}
+
+.articles__main {
+	padding: 0 35px;
+}
+
+.articles__data {
+	font-size: 16px;
+	color: var(--anchor);
+	text-transform: uppercase;
+	display: flex;
+	gap: 14px;
+}
+
+.articles__title {
+	font-size: 24px;
+}
+
+.articles__text {
+	width: 500px;
+	padding: 25px 50px;
+	font-size: 16px;
+}
+
+.articles__browse {
+	display: block;
+	background-color: var(--text);
+	color: var(--white);
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 12px 0;
+	transition: .125s ease;
+}
+
+.articles__browse:hover {
+	background-color: var(--anchor);
 }
