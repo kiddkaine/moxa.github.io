@@ -1,0 +1,328 @@
+/* Импортируем шрифт */
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Общие настройки для всей страницы */
+
+:root {
+	--background: #f2f1ef;
+	--text: #161513;
+	--anchor: #e94d35;
+	--white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--text);
+	font-family: 'Bai Jamjuree', sans-serif;
+	overflow-x: hidden;
+}
+
+/* Настройка скролла */
+
+body::-webkit-scrollbar {
+	background-color: var(--background);
+	width: 12.5px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: var(--background);
+	border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--anchor);
+	border-radius: 100px;
+}
+
+/* Обёртка для блока 1440px */
+
+.wrapper {
+	width: 100%;
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+/* Контейнер для блока 1060px */
+
+.container {
+	width: 100%;
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+/* Общие настройки для блоков */
+
+.block {
+	margin-top: 120px;
+}
+/* Шапка сайта */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 27px 0;
+}
+
+.header__logo {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	font-size: 32px;
+}
+
+.icon {
+	color: var(--anchor);
+}
+
+.header__items {
+	display: flex;
+	gap: 32px;
+}
+
+.header__item {
+	list-style: none;
+	padding: 5px 0;
+	transition: .125s ease;
+}
+
+.header__item:hover {
+	border-bottom: 1px solid var(--text);
+}
+
+.header__link {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--text);
+}
+
+.header__button {
+	color: var(--text);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 9px 26px;
+	border: 1px solid var(--text);
+	transition: .125s ease;
+}
+
+.header__button:hover {
+	color: var(--white);
+	background-color: var(--text);
+}
+
+/* Блок интро */
+
+.intro {
+	padding: 13px 0 120px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.intro__title {
+	font-size: 56px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
+}
+
+.intro__skills {
+	display: flex;
+	gap: 30px;
+	margin: 35px 0 40px 0;
+}
+
+.intro__item {
+	text-transform: uppercase;
+	padding: 0 16px;
+	list-style: url(../img/marker.png);
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.intro__item:first-child {
+	list-style: none;
+	padding: 0 16px 0 0;
+}
+
+.intro__talk {
+	display: flex;
+}
+
+.intro__text,
+.intro__link {
+	padding: 13px 33px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.intro__text {
+	background-color: var(--text);
+	color: var(--white);
+}
+
+.intro__link {
+	text-decoration: none;
+	color: var(--text);
+	transition: .125s ease;
+	border: 1px solid var(--text);
+	border-left: unset;
+}
+
+.intro__link:hover {
+	background-color: var(--anchor);
+	color: var(--white);
+	border: 1px solid var(--anchor);
+	border-left: unset;
+}
+
+/* Блок с навыками */
+
+.skills {
+	background-color: var(--text);
+	color: var(--white);
+	transform: rotate(-4.93deg);
+	width: 102vw;
+	position: relative;
+	left: -20px;
+	margin-bottom: 200px;
+}
+
+.skills__items {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 45px;
+	gap: 50px;
+}
+
+.skills__item {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	display: flex;
+	gap: 25px;
+}
+
+/* Блок обо мне */
+
+.about {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__person {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.about__name {
+	font-size: 23px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.about__job {
+	font-size: 56px;
+	font-weight: 400;
+}
+
+.about__description {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.about__title {
+	font-size: 31px;
+	font-weight: 400;
+}
+
+.about__text {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.about__data {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__item {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.about__sup {
+	color: var(--anchor);
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.about__sub {
+	font-size: 23px;
+	font-weight: 400;
+}
+
+/* Блок опыта работы */
+
+.experience {
+	border: 2px solid var(--text);
+}
+
+.experience__items {
+	display: flex;
+}
+
+.experience__item {
+	width: 33.3%;
+	list-style: none;
+	padding: 25px 75px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+}
+
+.experience__item-center {
+	color: var(--white);
+	background-color: var(--text);
+}
+
+.experience__quantity {
+	font-size: 56px;
+	font-weight: 400;
+}
+
+.experience__description {
+	font-size: 16px;
+	font-weight: 400;
+}
