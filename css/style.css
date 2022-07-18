@@ -206,6 +206,12 @@ body::-webkit-scrollbar-thumb {
 	border-left: unset;
 }
 
+.intro__image {
+	max-width: 562px;
+    width: 100%;
+    height: auto;
+}
+
 /* Блок с навыками */
 
 .skills {
@@ -239,7 +245,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about__person {
-	width: 350px;
+	max-width: 350px;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -255,7 +262,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about__description {
-	width: 600px;
+	max-width: 600px;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -415,9 +423,17 @@ body::-webkit-scrollbar-thumb {
 	justify-content: space-between;
 }
 
+.portfolio__content {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+	gap: 40px;
+}
+
 .portfolio__photo {
 	max-width: 460px;
-	width: 50%;
+	width: 60%;
 	height: auto;
 }
 
@@ -426,13 +442,11 @@ body::-webkit-scrollbar-thumb {
 	text-transform: uppercase;
 	background-color: var(--red);
 	color: var(--white);
-	display: inline;
 	padding: 5px 12px;
 }
 
 .portfolio__text {
 	font-size: 45px;
-	margin: 30px 0 50px 0;
 }
 
 .portfolio__link {
@@ -503,17 +517,21 @@ body::-webkit-scrollbar-thumb {
 .articles__box {
 	display: flex;
 	flex-direction: column;
-	gap: 100px;
+	gap: 50px;
 }
+
 .articles__item {
 	display: flex;
 	justify-content: space-between;
 	border: 2px solid var(--black);
 	align-items: center;
+	padding: 25px;
 }
 
 .articles__main {
-	padding: 0 35px;
+	display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .articles__data {
@@ -529,8 +547,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .articles__text {
-	width: 500px;
-	padding: 25px 50px;
+	max-width: 500px;
+    width: 100%;
+	padding-left: 25px;
 	font-size: 16px;
 }
 
