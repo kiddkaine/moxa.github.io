@@ -145,6 +145,10 @@
 		list-style: url(../img/marker.png);
 		padding: 0;
 	}
+
+	.footer__items {
+		gap: 26px;
+	}
 }
 
 @media (max-width:520px) {
@@ -155,6 +159,10 @@
 	.subcribe__form {
 		flex-direction: column;
 	}
+
+	.footer__made {
+		margin-right: 25px;
+	}
 }
 
 @media (max-width:500px) {
@@ -164,5 +172,11 @@
 }
 
 @media (max-width:460px) {
-	
+	.experience__quantity {
+		font-size: 32px;
+	}
+
+	.services__item {
+		text-align: center;
+	}
 }

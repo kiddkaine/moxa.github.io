@@ -451,13 +451,16 @@ body::-webkit-scrollbar-thumb {
 
 .portfolio__link {
 	color: var(--black);
-	text-decoration: none;
 	font-size: 20px;
 	transition: .125s ease;
 }
 
 .portfolio__link:hover {
-	text-decoration: underline;
+	color: var(--red);
+}
+
+.portfolio__link:active {
+	color: var(--black);
 }
 
 /* Блок услуги */
